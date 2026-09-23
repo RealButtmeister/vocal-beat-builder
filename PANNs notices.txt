@@ -1,0 +1,52 @@
+PANNs instrument-recognition notices
+
+Architecture: MobileNetV1, adapted for inference from Qiuqiang Kong et al.
+https://github.com/qiuqiangkong/audioset_tagging_cnn
+Architecture changes: unused training augmentation, initialization and dropout
+removed. Parameter names and inference layers retain the original structure.
+
+Pretrained weights: MobileNetV1_mAP=0.389.pth, the authors' official release
+https://zenodo.org/records/3987831
+Creators: Qiuqiang Kong, Yin Cao, Turab Iqbal, Yuxuan Wang, Wenwu Wang,
+and Mark D. Plumbley. PANNs: Large-Scale Pretrained Audio Neural Networks
+for Audio Pattern Recognition (2020).
+Weights license: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Verified against the official Zenodo record's metadata license, cc-by-4.0.
+https://creativecommons.org/licenses/by/4.0/
+The weights are downloaded unchanged and checked against the published MD5:
+a419303e1c88aa1b9d2ac3811563d371
+
+Class-label CSV: copied unchanged from the authors' repository. The AudioSet
+ontology is described at https://research.google.com/audioset/ontology/index.html
+and released under CC BY-SA 4.0. Google AudioSet attribution applies.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Dependency: torchlibrosa 0.1.0 by Qiuqiang Kong (MIT).
+https://github.com/qiuqiangkong/torchlibrosa
+Installed package notices are retained in the private runtime.
+
+The recognition outputs are model estimates from audio, not exact plugin names
+or transcribed musical notes. A model score is not calibrated certainty.
+
+Architecture source license follows:
+The MIT License
+  
+Copyright (c) 2018-2020 Qiuqiang Kong
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
