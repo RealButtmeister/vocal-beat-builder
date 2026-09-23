@@ -1,0 +1,11 @@
+Rubber Band 4.0.0 Windows executable and sndfile.dll
+Published by Breakfast Quay. Existing distribution copied unchanged.
+License and upstream readme: COPYING.txt and README.txt in this folder.
+Source: https://github.com/breakfastquay/rubberband/tree/v4.0.0
+libsndfile source: https://github.com/libsndfile/libsndfile
+
+FFmpeg 7.1 Windows executable from the existing imageio-ffmpeg installation.
+License and build configuration: FFmpeg license and build.txt.
+Source and license: https://ffmpeg.org/download.html and https://ffmpeg.org/legal.html
+
+These programs are invoked locally to decode and time-stretch audio.
